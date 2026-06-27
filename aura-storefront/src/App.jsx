@@ -500,14 +500,7 @@ export default function App() {
               
               <div 
                 ref={sliderRef}
-                className="relative w-full max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg select-none cursor-ew-resize"
-                onMouseMove={(e) => isSliding && handleSliderMove(e.clientX)}
-                onMouseDown={() => setIsSliding(true)}
-                onMouseUp={() => setIsSliding(false)}
-                onMouseLeave={() => setIsSliding(false)}
-                onTouchMove={handleTouchMove}
-                onTouchStart={() => setIsSliding(true)}
-                onTouchEnd={() => setIsSliding(false)}
+                className="relative w-full max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg select-none"
               >
                 {/* Image After (Right side / background) */}
                 <div className="absolute inset-0 bg-[#E2E8F0] flex items-center justify-center">
@@ -526,16 +519,17 @@ export default function App() {
 
                 {/* Image Before (Left side / clipped) */}
                 <div 
-                  className="absolute inset-y-0 left-0 overflow-hidden z-10"
+                  className="absolute inset-y-0 left-0 overflow-hidden z-10 animate-fade-in"
                   style={{ width: `${sliderPercentage}%` }}
                 >
                   {/* Re-render image to clip correctly */}
-                  <div className="absolute inset-0 w-full h-full bg-[#E2E8F0]" style={{ width: sliderRef.current ? sliderRef.current.offsetWidth : 1000 }}>
+                  <div className="absolute inset-y-0 left-0 h-full bg-[#E2E8F0]" style={{ width: sliderRef.current ? sliderRef.current.offsetWidth : 800 }}>
                     <div className="absolute inset-0 bg-slate-950/40 z-10"></div>
                     <img 
                       src="/aura_smart_diffuser.png" 
                       alt="Dry room air" 
-                      className="w-full h-full object-cover filter grayscale contrast-90 brightness-75"
+                      className="w-full h-full object-cover filter grayscale contrast-90 brightness-75 max-w-none"
+                      style={{ width: sliderRef.current ? sliderRef.current.offsetWidth : 800, height: '100%' }}
                     />
                     <span className="absolute bottom-6 left-6 px-3 py-1.5 bg-slate-950/80 backdrop-blur-sm text-white text-xs uppercase tracking-wider rounded-md font-medium z-20">
                       Dry Stale Air (Before)
@@ -543,10 +537,22 @@ export default function App() {
                   </div>
                 </div>
 
+                {/* Range Control Overlay */}
+                <input 
+                  type="range" 
+                  min="0" 
+                  max="100" 
+                  value={sliderPercentage}
+                  onChange={(e) => setSliderPercentage(+e.target.value)}
+                  className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0"
+                  style={{ WebkitAppearance: 'none', appearance: 'none', background: 'transparent', border: 'none' }}
+                  aria-label="Before/After Slider"
+                />
+
                 {/* Handle Bar */}
                 <div 
-                  className="absolute inset-y-0 z-20 w-1 bg-white cursor-ew-resize shadow-md"
-                  style={{ left: `${sliderPercentage}%` }}
+                  className="absolute inset-y-0 z-20 w-1 bg-white pointer-events-none shadow-md"
+                  style={{ left: `${sliderPercentage}%`, transform: 'translateX(-50%)' }}
                 >
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white text-slate-800 border-2 border-slate-800 rounded-full flex items-center justify-center shadow-lg font-bold">
                     ↔
