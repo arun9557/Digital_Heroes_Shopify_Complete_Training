@@ -145,6 +145,31 @@ h1, h2, h3, h4, h5, h6 {
   from { width: 0%; }
 }
 
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Brightness utility */
+.brightness-60 { filter: brightness(0.6); }
+
+/* Focus-visible accessibility */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   ACCORDION TRANSITION
+   ============================================================ */
+.duration-400 { transition-duration: 400ms; }
+
 /* Animation utility classes */
 .anim-fade-in         { animation: fadeIn 0.6s var(--ease-out) both; }
 .anim-fade-in-up      { animation: fadeInUp 0.7s var(--ease-out) both; }
