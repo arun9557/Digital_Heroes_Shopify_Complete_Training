@@ -1,0 +1,29 @@
+AURA Wellness — Submission Steps Checklist
+============================================
+
+To finalize your submission for the Digital Heroes developer trial, make sure to complete these remaining manual tasks:
+
+1. Setup Your Development Store:
+   - Create the store under your Shopify Partners account.
+   - Store Name: Aura Wellness (or a variation if unavailable).
+   - Set the Store Password to: Test@123 (under Online Store -> Preferences -> Password Protection).
+
+2. Follow the Store Build Steps:
+   - Use our 'store_setup_guide.md' to construct the pages, navigation menus, and import products.
+   - Install and configure the 6 required apps (Judge.me, Shopify Bundles, Shopify Subscriptions, Shopify Search & Discovery, Shopify Marketplace Connect, Labeler).
+
+3. Create the Collaborator Invite:
+   - In Shopify Admin, go to Settings -> Users -> Add collaborator.
+   - Enter the Digital Heroes partner email (as provided in your instruction guidelines).
+
+4. Prepare the final links:
+   - Write down your store preview link: https://your-store-name.myshopify.com (with password: Test@123).
+   - Once all tasks are done, you can zip this entire 'Submission Package' folder and submit it to the hiring team!
+
+5. Bonus: Interactive Storefront Demo:
+   - We have package a complete offline React + Tailwind CSS interactive preview of the store in the 'Aura Storefront Interactive Demo' folder.
+   - To run it locally:
+     1. Open a terminal in 'Aura Storefront Interactive Demo'.
+     2. Run 'npm install' to restore dependencies.
+     3. Run 'npm run dev' to spin up the local server.
+     4. Open your browser to view the interactive demo which showcases the 6 required apps, filters, cart, bundle builder, and subscription plans in action!

@@ -1,0 +1,15 @@
+AURA Wellness — Brand Identity Assets
+=========================================
+
+1. Color Palette (60/30/10 Rule):
+   - 60% Primary Color (Backgrounds): #F9F9FB (Light Off-white Slate)
+   - 30% Secondary Color (Text & Cards): #1E293B (Deep Slate Navy)
+   - 10% Accent Color (CTAs & Badges): #D97706 (Warm Amber Gold)
+
+2. Typography Pairing:
+   - Headings Font: Playfair Display (Serif)
+   - Body Font: Lato (Sans-serif)
+
+3. Logo Details:
+   - File: logo.png (Minimalist modern luxury design)
+   - Recommended width in Header settings: 140px

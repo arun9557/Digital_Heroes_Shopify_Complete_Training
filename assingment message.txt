@@ -1,0 +1,40 @@
+🚀 Welcome to Digital Heroes!
+
+We have openings within our team for Client Success Specialist, and this task focuses specifically on Shopify store design and development.
+
+⏳ Challenge Guidelines: The store must be built using Shopify Partners.
+
+🔐 Store Password: Test@123
+
+🎯 Your Goal:
+Build the best Shopify store you can within 2 days. We will be evaluating your design skills, creativity, research ability, and understanding of modern eCommerce stores.
+
+🏆 Final Objective:
+Create a ready-to-sell store that matches the quality and standard of the references provided. The store should look professional, premium, and market-ready.
+
+📄 Important:
+Please go through the PDF carefully, as it contains all the technical requirements and detailed instructions for this task. Make sure to follow everything mentioned while building your store.
+
+⏳ Challenge:
+
+* The store must be built using Shopify Partners.
+* You have to add and integrate the following Shopify apps and study their functionality as well:
+
+  1. Judge.me Reviews
+  2. Shopify Bundles
+  3. Shopify Subscriptions
+  4. Shopify Search & Discovery
+  5. Shopify Marketplace Connect
+  6. Labeler – Product Labels
+* Be prepared to explain the purpose and use case of each app during the review.
+* The hiring decision will be based entirely on the quality of your store.
+
+🔗 References:
+
+1. https://www.therabody.com/
+2. https://dieselrcorp.ca/
+3. https://liwacoffee.com/
+4. https://notiv.in/
+5. https://freereignfarm.com/
+
+All the best! 🚀
