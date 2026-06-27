@@ -19,3 +19,11 @@ To finalize your submission for the Digital Heroes developer trial, make sure to
 4. Prepare the final links:
    - Write down your store preview link: https://your-store-name.myshopify.com (with password: Test@123).
    - Once all tasks are done, you can zip this entire 'Submission Package' folder and submit it to the hiring team!
+
+5. Bonus: Interactive Storefront Demo:
+   - We have package a complete offline React + Tailwind CSS interactive preview of the store in the 'Aura Storefront Interactive Demo' folder.
+   - To run it locally:
+     1. Open a terminal in 'Aura Storefront Interactive Demo'.
+     2. Run 'npm install' to restore dependencies.
+     3. Run 'npm run dev' to spin up the local server.
+     4. Open your browser to view the interactive demo which showcases the 6 required apps, filters, cart, bundle builder, and subscription plans in action!
