@@ -1,0 +1,41 @@
+# ============================================
+# AURA Wellness — .gitignore
+# ============================================
+
+# ── Assignment Prompt & Private Docs ────────
+"assingment message.txt"
+"Digital_Heroes_Shopify_Complete_Training_Guide (2).pdf"
+store_setup_guide.md
+interview_prep.md
+
+# ── Reference Screenshots (PDFs) ────────────
+References/
+
+# ── Submission Package (auto-generated) ─────
+"Submission Package"/
+
+# ── Node / React App build artifacts ────────
+aura-storefront/node_modules/
+aura-storefront/dist/
+aura-storefront/.vite/
+
+# ── OS & Editor junk ────────────────────────
+.DS_Store
+Thumbs.db
+*.DS_Store
+desktop.ini
+
+# ── VS Code / IDE ────────────────────────────
+.vscode/
+.idea/
+
+# ── Logs ────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Environment variables ────────────────────
+.env
+.env.local
+.env.*.local
